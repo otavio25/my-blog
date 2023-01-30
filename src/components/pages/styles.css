@@ -104,7 +104,7 @@
 
 .div-social-contato{
     width: 300px;
-    height: 150px;
+    height: 100px;
 }
 
 .div-email-contato{
@@ -119,4 +119,8 @@
 
 .container-contato{
     margin-left: 20%;
+}
+
+#instagram, #facebook, #github, #linkedin{
+    margin: 1em;
 }

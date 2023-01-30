@@ -1,6 +1,6 @@
 import React from 'react';
 import { FcDownRight} from "react-icons/fc";
-import {BsLinkedin, BsInstagram, BsWhatsapp, BsGithub} from 'react-icons/bs'
+import {BsLinkedin, BsInstagram, BsWhatsapp, BsGithub, BsFacebook} from 'react-icons/bs'
 import {CgMail} from 'react-icons/cg'
 
 function Contato(){
@@ -12,9 +12,10 @@ function Contato(){
             <div className='container-contato'>
                 <div className='div-social-contato'>
                     <p><FcDownRight/>Redes Sociais</p>
-                    <p><BsInstagram/> x.otavio.x </p>
-                    <p><BsLinkedin/> Otávio Souza</p>
-                    <p><BsGithub/> otavio25 </p>
+                    <a id='instagram' href='https://www.instagram.com/x.otavio.x/'><BsInstagram size={30}/></a>
+                    <a id='linkedin' href='https://www.linkedin.com/in/ot%C3%A1vio-souza-827516183/'><BsLinkedin size={30}/></a>
+                    <a id='github' href='https://github.com/otavio25'><BsGithub size={30}/></a>
+                    <a id='facebook' href='https://www.facebook.com/profile.php?id=100022442240678'><BsFacebook size={30}/></a>
                 </div>
                 <div className='div-email-contato'>
                     <p><FcDownRight/>E-mail</p>
