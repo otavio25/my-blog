@@ -11,7 +11,7 @@ function Sobre(){
             <div className='container-sobre'>
                 <div className='div-p-sobre'>
                     <p id='p-sobre'>Sou desenvolvedor Full Stack Javascript (React + Node.js + JS). Possuo conhecimento
-                        em algumas dsa principais tecnologias usadas no mundo DevOps como Kubernetes, Ansible e Docker.
+                        em algumas das principais tecnologias usadas no mundo DevOps como Kubernetes, Ansible e Docker.
                         Possuo conhecimento em banco de dados relacionais principalmento Oracle, MySQL, Postgres.
                     </p>
                 </div>

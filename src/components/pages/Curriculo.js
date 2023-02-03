@@ -17,7 +17,7 @@ function Curriculo(){
                     <div className='div-exp-curriculo'>
                         <p><FcDownRight/> Experiência Profissional</p>
                         <p><FcApproval/> DevOps junior na DATAPREV - 1 ano de experiência como estagiário</p>
-                        <p><FcApproval/> DevWeb/nalista de dados/Suporte na ANAC - 2 anos de experiência como estagiário</p>
+                        <p><FcApproval/> DevWeb/analista de dados/Suporte na ANAC - 2 anos de experiência como estagiário</p>
                     </div>
                     <div className='div-conhecimentos-curriculo'>
                         <p><FcDownRight/> Conhecimentos</p>
