@@ -1,37 +1,22 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom'
-import './styles.css'
-import {FiMenu} from 'react-icons/fi'
+import React from 'react';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 function Header(){
-    const [menuOpen, setMenuOpen] = useState(true)
-
-    useEffect(()=>{
-        window.addEventListener('resize', ()=>{
-            if(window.innerWidth >= 999){
-                setMenuOpen(true)
-            }
-        })
-    }, [])
-
     return (
         <header>
-            <nav >
-                <Link className='logo' to="/">Otávio</Link>
-                <div className='mobile-menu'>
-                    <FiMenu size={30} color='#fff' onClick={()=>{
-                        setMenuOpen(!menuOpen)
-                    }}/>
-                </div>
-                {menuOpen && (
-                    <ul className='nav-list'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/sobre">Sobre</Link></li>
-                        <li><Link to="/curriculo">Currículo</Link></li>
-                        <li><Link to="/contato">Contato</Link></li>
-                    </ul>
-                )}
-            </nav>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="/">Otávio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="/curriculo">Currículo</Nav.Link>
+                            <Nav.Link href="/sobre">Sobre</Nav.Link>
+                            <Nav.Link href="/contato">Contato</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </header>
     )
 }

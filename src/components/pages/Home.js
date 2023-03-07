@@ -1,22 +1,23 @@
 import React from 'react';
-import Eu from '../img/eu.jpg'
 import './styles.css'
+import { Carousel } from 'react-bootstrap';
+import ImageHome1 from '../img/home1.png'
+import ImageHome2 from '../img/home2.png'
+import ImageHome3 from '../img/home3.png'
 
 function Home(){
     return(
-        <div>
-            <div className='div-h1-home'>
-                <h1 id='h1-home'>Bem-vindo ao meu site</h1>
-            </div>
-            <div className='container-home'>
-                <div className='div-p-home'>
-                    <p id='p-home'>Otávio | Desenvolvedor Full Stack</p>
-                </div>
-                <div className='div-img-home'>
-                    <img id='img-home' src={Eu}/>
-                </div>
-            </div>
-        </div>
+        <Carousel>
+            <Carousel.Item>
+                <img className="d-block w-100" src={ImageHome1} alt="First slide" />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={ImageHome2} alt="Second slide" />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={ImageHome3} alt="Third slide" />
+            </Carousel.Item>
+        </Carousel>
     )
 }
 

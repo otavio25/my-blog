@@ -1,12 +1,11 @@
 import React from 'react';
-import './styles.css'
-import Copy from '../img/copy.png'
 
 function Footer(){
     return(
-        <footer>
-            <h1 className='TextoFooter'>Todos os direitos reservados</h1>
-            <img src={Copy} className='copy'/>
+        <footer id="sticky-footer" className="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom">
+            <div class="container text-center">
+                <small>Copyright &copy; 2023. Todos os direitos reservados.</small>
+            </div>
         </footer>
     )
 }
