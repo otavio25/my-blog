@@ -1,32 +1,60 @@
-import React from 'react';
-import { FcDownRight} from "react-icons/fc";
-import {BsLinkedin, BsInstagram, BsWhatsapp, BsGithub, BsFacebook} from 'react-icons/bs'
-import {CgMail} from 'react-icons/cg'
-import { Container, ListGroup } from 'react-bootstrap';
+import React, {useState} from 'react';
+import { Container, Button, Form } from 'react-bootstrap';
+import emailjs from '@emailjs/browser'
 
 function Contato(){
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    function sendEmail(e){
+        e.preventDefault()
+
+        if(name === '', email === '', message === ''){
+            alert("Todos os campos precisam ser preenchidos!")
+            return
+        }
+        else{
+            const templateParams = {
+                from_name: name,
+                message: message,
+                email: email
+            }
+            
+            emailjs.send("service_a76trt7", "template_j12gjkp", templateParams, "dsMBx1C-YAITurYuF")
+            .then((res)=>{
+                alert("Mensagem enviada com sucesso!!")
+            })
+        }
+
+        setName('')
+        setEmail('')
+        setMessage('')
+
+    }
+
     return(
         <Container>
             <div className='div-h1-contato'>
                 <h1 id='h1-contato'>Entre em Contato</h1>
             </div>
-            <ListGroup id='lista-contato'>
-                <ListGroup.Item>
-                    <h2><FcDownRight/>Redes Sociais</h2>
-                    <a id='instagram' href='https://www.instagram.com/x.otavio.x/'><BsInstagram size={30}/></a>
-                    <a id='linkedin' href='https://www.linkedin.com/in/ot%C3%A1vio-souza-827516183/'><BsLinkedin size={30}/></a>
-                    <a id='github' href='https://github.com/otavio25'><BsGithub size={30}/></a>
-                    <a id='facebook' href='https://www.facebook.com/profile.php?id=100022442240678'><BsFacebook size={30}/></a>
-                </ListGroup.Item>
-                <ListGroup.Item>
-                    <h2><FcDownRight/>E-mail</h2>
-                    <p><CgMail/>oliveiraotavio2525@gmail.com</p>
-                </ListGroup.Item>
-                <ListGroup.Item>
-                    <h2><FcDownRight/>Telefone</h2>
-                    <p><BsWhatsapp/> (61)999055506</p>
-                </ListGroup.Item>
-            </ListGroup>
+            <Form id='formulario-contato' onSubmit={sendEmail}>
+                <Form.Group className="mb-3" value={name} onChange={(e) => setName(e.target.value)}>
+                    <Form.Label>Nome</Form.Label>
+                    <Form.Control type="text" placeholder="nome" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" value={email} onChange={(e) => setEmail(e.target.value)}>
+                    <Form.Label>E-mail</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" value={message} onChange={(e) => setMessage(e.target.value)}>
+                    <Form.Label>Motivo do contato</Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Enviar
+                </Button>
+            </Form>
         </Container>
     )
 }

@@ -12,7 +12,7 @@ function Sobre(){
                     <Card.Text>
                     Sou desenvolvedor Full Stack Javascript (React + Node.js + JS). Possuo conhecimento
 em algumas das principais tecnologias usadas no mundo DevOps como Kubernetes, Ansible e Docker.
-Possuo conhecimento em banco de dados relacionais principalmento Oracle, MySQL, Postgres.
+Possuo conhecimento em banco de dados relacionais Oracle, MySQL, Postgres.
                     </Card.Text>
             </Card.ImgOverlay>
         </Card>

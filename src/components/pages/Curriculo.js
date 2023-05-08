@@ -15,12 +15,13 @@ function Curriculo(){
                 </ListGroup.Item>
                 <ListGroup.Item>
                     <p><FcDownRight/> Experiência Profissional</p>
-                    <p><FcApproval/> DevOps junior na DATAPREV - 1 ano de experiência como estagiário</p>
+                    <p><FcApproval/> Treinamento DevOps/Fullstack Node.js na DATAPREV - 1 ano de experiência como estagiário</p>
                     <p><FcApproval/> DevWeb/analista de dados/Suporte na ANAC - 2 anos de experiência como estagiário</p>
                 </ListGroup.Item>
                 <ListGroup.Item>
                     <p><FcDownRight/> Conhecimentos</p>
-                    <p><FcApproval/> Conhecimentos em C, C++, Python, Javascript, yaml, SQL, PLSQL, banco de dados relacionais, git, API Rest </p>
+                    <p><FcApproval/> Conhecimentos em C, C++, Python, Javascript, yaml, SQL, PLSQL, banco de dados relacionais, git, API Rest, MUI, Bootstrap </p>
+                    <p><FcApproval/> Conhecimentos em bancos de dados realacionais Oracle, MySQL e Postgres </p>
                     <p><FcApproval/>Desenvolvedor Full Stack javascript (Node.js + React + Javascript + Swagger)</p>
                     <p><FcApproval/>Conhecimentos nas tecnologias mais usadas atualmente no mundo DevOps como kubernetes, docker e ansible</p>
                     <p><FcApproval/>Especialista em desenvolvimento Web utilizando framework Oracle Apex</p>
