@@ -6,31 +6,29 @@ function Contato(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    
 
     function sendEmail(e){
         e.preventDefault()
 
-        if(name === '', email === '', message === ''){
-            alert("Todos os campos precisam ser preenchidos!")
+        if(name === '' || email === '' || message === ''){
+            alert("Todos os campos precisam ser preenchidos!");
             return
         }
-        else{
-            const templateParams = {
-                from_name: name,
-                message: message,
-                email: email
-            }
-            
-            emailjs.send("service_a76trt7", "template_j12gjkp", templateParams, "dsMBx1C-YAITurYuF")
-            .then((res)=>{
-                alert("Mensagem enviada com sucesso!!")
-            })
+        
+        const templateParams = {
+            from_name: name,
+            message: message,
+            email: email
         }
-
-        setName('')
-        setEmail('')
-        setMessage('')
-
+        
+        emailjs.send("service_a76trt7", "template_j12gjkp", templateParams, "dsMBx1C-YAITurYuF")
+        .then(()=>{
+            alert("Mensagem enviada com sucesso!")
+            setName('')
+            setEmail('')
+            setMessage('')
+        })
     }
 
     return(
@@ -41,7 +39,7 @@ function Contato(){
             <Form id='formulario-contato' onSubmit={sendEmail}>
                 <Form.Group className="mb-3" value={name} onChange={(e) => setName(e.target.value)}>
                     <Form.Label>Nome</Form.Label>
-                    <Form.Control type="text" placeholder="nome" />
+                    <Form.Control type="text" placeholder="ex: João da Silva"/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" value={email} onChange={(e) => setEmail(e.target.value)}>
                     <Form.Label>E-mail</Form.Label>
@@ -49,11 +47,14 @@ function Contato(){
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" value={message} onChange={(e) => setMessage(e.target.value)}>
                     <Form.Label>Motivo do contato</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Control as="textarea" rows={3} placeholder="Informe aqui sua ideia..."/>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Enviar
-                </Button>
+
+                <div className="d-grid gap-2">
+                    <Button variant="primary" type="submit" size="lg">
+                        Enviar
+                    </Button>
+                </div>
             </Form>
         </Container>
     )

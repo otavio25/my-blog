@@ -21,7 +21,7 @@ function Footer(){
                     <a id='whastapp' href='https://wa.me/5561999055506'><BsWhatsapp size={30}/></a>
                 </li>
             </ul>
-            <p class="text-center text-muted">© 2022 Company, Inc</p>
+            <p class="text-center text-muted">© 2023 - Todos os Direitos Reservados</p>
         </footer>
     )
 }
