@@ -20,11 +20,8 @@ function Curriculo(){
                 </ListGroup.Item>
                 <ListGroup.Item>
                     <p><FcDownRight/> Conhecimentos</p>
-                    <p><FcApproval/> Conhecimentos em C, C++, Python, Javascript, yaml, SQL, PLSQL, banco de dados relacionais, git, API Rest, MUI, Bootstrap </p>
-                    <p><FcApproval/> Conhecimentos em bancos de dados realacionais Oracle, MySQL e Postgres </p>
-                    <p><FcApproval/>Desenvolvedor Full Stack javascript (Node.js + React + Javascript + Swagger)</p>
-                    <p><FcApproval/>Conhecimentos nas tecnologias mais usadas atualmente no mundo DevOps como kubernetes, docker e ansible</p>
-                    <p><FcApproval/>Especialista em desenvolvimento Web utilizando framework Oracle Apex</p>
+                    <p><FcApproval/> Conhecimentos em Javascript, Banco de dados relacionais (MySQL, Oracle, Postgres), MUI, Bootstrap, kubernetes, docker e ansible </p>
+                    <p><FcApproval/>Desenvolvedor Full Stack (Node.js + React + Javascript + Swagger) e especialista em desenvolvimento Web utilizando framework Oracle Apex</p>
                 </ListGroup.Item>
             </ListGroup>
         </Container>
