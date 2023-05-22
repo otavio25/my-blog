@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Container, Button, Form } from 'react-bootstrap';
+import { Container, Button, Form, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser'
 
 function Contato(){
@@ -10,6 +10,10 @@ function Contato(){
     const service_id = process.env.REACT_APP_SERVICE_ID
     const template_id = process.env.REACT_APP_TEMPLATE_ID
     const publickey = process.env.REACT_APP_PUBLICKEY
+
+    console.log("service_id: ", service_id)
+    console.log("template_id: ", template_id)
+    console.log("publickey: ", publickey)
     
     function sendEmail(e){
         e.preventDefault()
