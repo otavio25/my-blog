@@ -6,8 +6,11 @@ function Contato(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    
 
+    const service_id = process.env.REACT_APP_SERVICE_ID
+    const template_id = process.env.REACT_APP_TEMPLATE_ID
+    const publickey = process.env.REACT_APP_PUBLICKEY
+    
     function sendEmail(e){
         e.preventDefault()
 
@@ -21,8 +24,8 @@ function Contato(){
             message: message,
             email: email
         }
-        
-        emailjs.send("service_a76trt7", "template_j12gjkp", templateParams, "dsMBx1C-YAITurYuF")
+
+        emailjs.send(service_id, template_id, templateParams, publickey)
         .then(()=>{
             alert("Mensagem enviada com sucesso!")
             setName('')
