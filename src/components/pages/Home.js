@@ -14,8 +14,7 @@ function Home(){
                     <Card.Body>
                         <Card.Title>Full Stack</Card.Title>
                         <Card.Text>
-                        Sou desenvolvedor Full Stack Javascript. Possuo conhecimento em Node.js (Express), React.js e Swagger (Documentação de API).
-                        Além disso possuo conhecimentos em CSS, HTML, Bootstrap, MUI.
+                        Em mundo globalizado onde as informações correm de maneira fácil e rápida, se especializar em uma única tecnologia ou ferramenta de trabalho, ou não conseguir se adaptar ao uso de novas tecnologias é um grande problema nos dias hoje, principalmente pra quem quer adentrar no mercado de TI.
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -24,7 +23,7 @@ function Home(){
                     <Card.Body>
                         <Card.Title>DevOps</Card.Title>
                         <Card.Text>
-                        Possuo conhecimento em algumas das principais tecnologias usadas no mundo DevOps como Kubernetes, Ansible e Docker.
+                        Não basta só desenvolver aplicações! É necessário desenvolver e operar as aplicações. Integrando e monitorando suas atividades para buscar um desempenho mais otimizado e simplificado.
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -33,7 +32,7 @@ function Home(){
                     <Card.Body>
                         <Card.Title>Banco de dados</Card.Title>
                         <Card.Text>
-                        Possuo conhecimento nos banco de dados relacionais Oracle, MySQL, Postgres.
+                        Além de armazenar dados. Como organizar os dados? Porque organizar os dados? Que tipo de banco de dados é necessário pra determinado tipo de aplicação? Alguns dos questionamentos que se deve fazer a um profissional de TI.
                         </Card.Text>
                     </Card.Body>
                 </Card>
