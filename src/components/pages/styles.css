@@ -33,5 +33,6 @@
 }
 
 .texto-home{
-    background-color: #363636;
+    /*background-color: #363636;*/
+    background-image: linear-gradient(to bottom right, #1664d8,#363636);
 }
