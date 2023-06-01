@@ -5,6 +5,10 @@ import Curriculo from './components/pages/Curriculo'
 import Contato from './components/pages/Contato'
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
+import DevOps from './components/pages/DevOps';
+import FullStack from './components/pages/FullStack';
+import BancodeDados from './components/pages/BancodeDados';
+import Texto from './components/pages/Texto';
 
 function App(){
   return (
@@ -14,6 +18,10 @@ function App(){
         <Route path='/' element={<Home/>}/>
         <Route path='/curriculo' element={<Curriculo/>}/>
         <Route path='/contato' element={<Contato/>}/>
+        <Route path='/devops' element={<DevOps/>}/>
+        <Route path='/fullstack' element={<FullStack/>}/>
+        <Route path='/bancodedados' element={<BancodeDados/>}/>
+        <Route path='/texto' element={<Texto/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
