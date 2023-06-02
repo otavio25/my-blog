@@ -3,13 +3,14 @@ import { Container, Card, Button } from 'react-bootstrap';
 import ImageCard1 from '../img/fullstackcapa.png'
 import ImageCard2 from '../img/devopscapa.png'
 import ImageCard3 from '../img/banco-de-dados-capa.jpg'
-import {useSearchParams} from 'react-router-dom'
+import {useSearchParams, useNavigate} from 'react-router-dom'
 
 function Texto(){
     const [texto, setTexto] = useState([])
     const [searchParams, setSearchParams] = useSearchParams()
     const titulo = searchParams.get('titulo')
     const classificacao = searchParams.get('classificacao')
+    const navigate = useNavigate()
 
     useEffect(()=>{
         fetch(`http://localhost:3333/texto?titulo=${titulo}`)
@@ -20,6 +21,7 @@ function Texto(){
             }
         )
     })
+
     if(classificacao === "fullstack"){
         return(
             <Container>
@@ -30,7 +32,7 @@ function Texto(){
                         <Card.Text>
                             {texto.texto}
                         </Card.Text>
-                        <Button variant="primary">Voltar</Button>
+                        <Button variant="primary" onClick={() => navigate(-1)}>Voltar</Button>
                     </Card.Body>
                 </Card>
             </Container>
@@ -46,7 +48,7 @@ function Texto(){
                         <Card.Text>
                             {texto.texto}
                         </Card.Text>
-                        <Button variant="primary">Voltar</Button>
+                        <Button variant="primary" onClick={() => navigate(-1)}>Voltar</Button>
                     </Card.Body>
                 </Card>
             </Container>
@@ -62,7 +64,7 @@ function Texto(){
                         <Card.Text>
                             {texto.texto}
                         </Card.Text>
-                        <Button variant="primary">Voltar</Button>
+                        <Button variant="primary" onClick={() => navigate(-1)}>Voltar</Button>
                     </Card.Body>
                 </Card>
             </Container>

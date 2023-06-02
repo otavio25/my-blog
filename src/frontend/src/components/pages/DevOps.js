@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Container, Button, Table } from 'react-bootstrap';
+import { BsEye } from 'react-icons/bs'
 
 function DevOps(){
     const [texto, setTexto] = useState([])
@@ -26,8 +27,8 @@ function DevOps(){
                 <tbody>
                 { texto.map(texto =>
                     <tr>
-                        <td><Button variant="danger" href={"/texto?titulo=" + texto.titulo + "&classificacao=" + texto.classificacao} size="lg" >Veja</Button></td>
-                        <td>{texto.titulo}</td>
+                        <td class="text-center"><a href={"/texto?titulo=" + texto.titulo + "&classificacao=" + texto.classificacao}><BsEye size={40}/></a></td>
+                        <td class="text-center">{texto.titulo}</td>
                     </tr>
                 )}
                 </tbody>
