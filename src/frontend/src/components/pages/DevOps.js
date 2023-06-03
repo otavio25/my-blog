@@ -15,7 +15,7 @@ function DevOps(props){
         )
     })
 
-    console.log("props? ", props.titulo)
+    console.log("props? ", props)
 
     return (
         <Container>

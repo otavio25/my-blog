@@ -1,8 +1,12 @@
-import React from 'react';
-import { Container, Navbar, Nav, Button, Form } from 'react-bootstrap';
+import React, {useState} from 'react';
+import { Container, Navbar, Nav, Button, Offcanvas } from 'react-bootstrap';
 import Logo from '../img/logo.png'
 
 function Header(){
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     if(window.location.pathname === '/'){
         return (
             <header>
@@ -19,7 +23,17 @@ function Header(){
                             <Nav>
                                 <Button variant="dark" href="#curriculo">Currículo</Button>
                                 <Button variant="dark" href="#contato">Contato</Button>
+                                <Button variant="dark" onClick={handleShow}> Sobre </Button>
                             </Nav>
+                            <Navbar.Offcanvas show={show} onHide={handleClose}>
+                                <Offcanvas.Header closeButton>
+                                <Offcanvas.Title>Sobre mim e o site!</Offcanvas.Title>
+                                </Offcanvas.Header>
+                                <Offcanvas.Body>
+                                Some text as placeholder. In real life you can have the elements you
+                                have chosen. Like, text, images, lists, etc.
+                                </Offcanvas.Body>
+                            </Navbar.Offcanvas>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -27,10 +41,6 @@ function Header(){
         )
     }
     else{
-        function handleDevops(){
-            return <DevOps titulo={titulo}/>
-        }
-
         return(
             <header>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -43,6 +53,18 @@ function Header(){
                             <Nav className="me-auto">
                                 <Button variant="dark" href="/">Home</Button>
                             </Nav>
+                            <Nav>
+                                <Button variant="dark" onClick={handleShow}> Sobre </Button>
+                            </Nav>
+                            <Navbar.Offcanvas show={show} onHide={handleClose}>
+                                <Offcanvas.Header closeButton>
+                                <Offcanvas.Title>Sobre mim e o site!</Offcanvas.Title>
+                                </Offcanvas.Header>
+                                <Offcanvas.Body>
+                                Some text as placeholder. In real life you can have the elements you
+                                have chosen. Like, text, images, lists, etc.
+                                </Offcanvas.Body>
+                            </Navbar.Offcanvas>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
