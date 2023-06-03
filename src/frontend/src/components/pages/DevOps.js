@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Container, Button, Table } from 'react-bootstrap';
 import { BsEye } from 'react-icons/bs'
 
-function DevOps(){
+function DevOps(props){
     const [texto, setTexto] = useState([])
 
     useEffect(()=>{
@@ -14,6 +14,8 @@ function DevOps(){
             }
         )
     })
+
+    console.log("props? ", props.titulo)
 
     return (
         <Container>

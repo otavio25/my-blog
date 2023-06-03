@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './components/pages/Home'
-import Curriculo from './components/pages/Curriculo'
-import Contato from './components/pages/Contato'
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
 import DevOps from './components/pages/DevOps';
@@ -16,8 +14,6 @@ function App(){
       <Header />
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/curriculo' element={<Curriculo/>}/>
-        <Route path='/contato' element={<Contato/>}/>
         <Route path='/devops' element={<DevOps/>}/>
         <Route path='/fullstack' element={<FullStack/>}/>
         <Route path='/bancodedados' element={<BancodeDados/>}/>
