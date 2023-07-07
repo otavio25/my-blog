@@ -6,7 +6,7 @@ module.exports = {
             const {titulo} = req.query
 
             if(titulo === null || titulo === ""){
-                return res.status(400).json({message: 'É necessário atribuir um valor para o campo título.'})
+                return res.status(400).json({error: 'É necessário atribuir um valor para o campo título.'})
             }
             const texto = await model.data_list_titulo(titulo)
 
@@ -14,10 +14,11 @@ module.exports = {
                 return res.status(200).json(texto.shift())
             }
             else{
-                return res.status(404).json({message: 'Dados não encontrados'})
+                return res.status(404).json({error: 'Dados não encontrados'})
             }
         } catch (error) {
             console.log(error.message)
+            return res.status(500).json({error: 'Erro no servidor'})
         }
     },
     get_classificacao : async(req, res) => {
@@ -25,7 +26,7 @@ module.exports = {
             const {classificacao} = req.query
 
             if(classificacao === null || classificacao === ""){
-                return res.status(400).json({message: 'É necessário atribuir um valor para o campo título.'})
+                return res.status(400).json({error: 'É necessário atribuir um valor para o campo título.'})
             }
             const textos = await model.data_list_classificacao(classificacao)
 
@@ -33,10 +34,11 @@ module.exports = {
                 return res.status(200).json(textos)
             }
             else{
-                return res.status(404).json({message: 'Dados não encontrados'})
+                return res.status(404).json({error: 'Dados não encontrados'})
             }
         } catch (error) {
             console.log(error.message)
+            return res.status(500).json({error: 'Erro no servidor'})
         }
     }
 }
