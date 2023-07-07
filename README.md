@@ -2,4 +2,4 @@
 
 <p> Olá sejam bem-vindos ao meu blog, aqui vocês poderam ver informações sobre minha vida acadêmica e profissional. Informações essas que considero importantes para o mercado de trabalho. </p>
 
-<a> www.otaviosouza.de:3000 </a>
+<a> http://www.otaviosouza.de </a>
