@@ -6,7 +6,7 @@ function FullStack(){
     const [texto, setTexto] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:3333/textos?classificacao=fullstack`)
+        fetch(`http://15.228.82.232:3333/textos?classificacao=fullstack`)
         .then(res=>res.json())
         .then(
             (res)=>{
