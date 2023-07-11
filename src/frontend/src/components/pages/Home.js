@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './styles.css'
-import { Card, CardGroup, Container, Button, ListGroup, Form, Carousel } from 'react-bootstrap';
-import { FcDownRight, FcApproval } from "react-icons/fc";
+import { Card, CardGroup, Container, Button, Form, Carousel, Figure } from 'react-bootstrap';
 import emailjs from '@emailjs/browser'
 import ImageCard1 from '../img/programacao.jpg'
 import ImageCard2 from '../img/DevOps.png'
@@ -9,6 +8,7 @@ import ImageCard3 from '../img/banco-de-dados.jpg'
 import ImageHome from '../img/home.png'
 import ImageHome2 from '../img/home2.png'
 import ImageHome3 from '../img/home3.png'
+import Curriculo from '../img/curriculo.jpg'
 
 function Home(){
     const [name, setName] = useState('')
@@ -119,22 +119,14 @@ function Home(){
                         <h1 id='h1-curriculo'>Minha Formação</h1>
                     </div>
 
-                    <ListGroup className='lista-curriculo'>
-                        <ListGroup.Item>
-                            <p><FcDownRight/> Formação</p>
-                            <p><FcApproval/> Bacharel em Ciência da Computação pela Universidade de Brasília, 2023</p>
-                        </ListGroup.Item>
-                        <ListGroup.Item>
-                            <p><FcDownRight/> Experiência Profissional</p>
-                            <p><FcApproval/> Treinamento DevOps/Fullstack Node.js na DATAPREV - 1 ano de experiência como estagiário</p>
-                            <p><FcApproval/> DevWeb/analista de dados/Suporte na ANAC - 2 anos de experiência como estagiário</p>
-                        </ListGroup.Item>
-                        <ListGroup.Item>
-                            <p><FcDownRight/> Conhecimentos</p>
-                            <p><FcApproval/> Conhecimentos em Javascript, Banco de dados relacionais (MySQL, Oracle, Postgres), MUI, Bootstrap, kubernetes, docker e ansible </p>
-                            <p><FcApproval/>Desenvolvedor Full Stack (Node.js + React + Javascript + Swagger) e especialista em desenvolvimento Web utilizando framework Oracle Apex</p>
-                        </ListGroup.Item>
-                    </ListGroup>
+                    <Figure>
+                        <Figure.Image
+                            width={1241}
+                            height={1755}
+                            alt="..."
+                            src={Curriculo}
+                        />
+                    </Figure>
 
                     <div class="mb-4">
                         <hr class="solid"/>
