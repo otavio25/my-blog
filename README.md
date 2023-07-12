@@ -16,4 +16,4 @@
 <blockquote> npx knex migrate:latest </blockquote>
 
 <h2> Site na nuvem </h2>
-<a> http://www.otaviosouza.de </a>
+<a href='http://www.otaviosouza.de'> www.otaviosouza.de </a>
