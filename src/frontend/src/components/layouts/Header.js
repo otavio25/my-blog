@@ -8,10 +8,12 @@ function Header(){
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [checked, setChecked] = useState(false);
+
     if(window.location.pathname === '/'){
         return (
             <header>
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+                <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" variant="dark" fixed="top">
                     <Container>
                         <Navbar.Brand href="/">
                             <img src={Logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
@@ -19,13 +21,13 @@ function Header(){
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Button variant="dark" href="#home">Home</Button>
+                                <Button variant="light" href="#home">Home</Button>
                             </Nav>
                             <Nav>
-                                <Button variant="dark" href="#conteudo">Conteúdo</Button>
-                                <Button variant="dark" href="#curriculo">Currículo</Button>
-                                <Button variant="dark" href="#contato">Contato</Button>
-                                <Button variant="dark" onClick={handleShow}> Sobre </Button>
+                                <Button variant="light" href="#conteudo">Conteúdo</Button>
+                                <Button variant="light" href="#curriculo">Currículo</Button>
+                                <Button variant="light" href="#contato">Contato</Button>
+                                <Button variant="light" onClick={handleShow}> Sobre </Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
@@ -54,7 +56,7 @@ function Header(){
     else{
         return(
             <header>
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img src={Logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
@@ -62,8 +64,8 @@ function Header(){
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Button variant="dark" href="/">Home</Button>
-                                <Button variant="dark" onClick={handleShow}> Sobre </Button>
+                                <Button variant="light" href="/">Home</Button>
+                                <Button variant="light" onClick={handleShow}> Sobre </Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

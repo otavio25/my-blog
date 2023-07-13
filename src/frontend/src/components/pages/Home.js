@@ -45,7 +45,7 @@ function Home(){
     }
 
     return(
-        <div>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
             <Carousel id="home">
                 <Carousel.Item>
                     <img
@@ -71,7 +71,6 @@ function Home(){
             </Carousel>
 
             <Container id='div-principal-scroll'>
-                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                     <CardGroup id="conteudo">
                         <Card>
                             <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>
@@ -156,7 +155,6 @@ function Home(){
                             </Button>
                         </div>
                     </Form>
-                </div>
             </Container>
         </div>
     )
