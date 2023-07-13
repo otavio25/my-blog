@@ -70,7 +70,10 @@ function Home(){
                 </Carousel.Item>
             </Carousel>
 
-            <Container id='div-principal-scroll'>
+            <Container>
+                <div class="mb-4">
+                    <hr class="solid"/>
+                </div>
                 <CardGroup id="conteudo">
                     <Card>
                         <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>

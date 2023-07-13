@@ -11,7 +11,7 @@ function Header(){
     if(window.location.pathname === '/'){
         return (
             <header>
-                <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" variant="dark" fixed="top">
+                <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
                     <Container>
                         <Navbar.Brand href="/">
                             <img src={Logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
@@ -54,7 +54,7 @@ function Header(){
     else{
         return(
             <header>
-                <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
+                <Navbar collapseOnSelect expand="lg" bg="light" data-bs-theme="light">
                     <Container>
                         <Navbar.Brand href="/">
                             <img src={Logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
