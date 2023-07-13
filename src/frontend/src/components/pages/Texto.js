@@ -24,7 +24,7 @@ function Texto(){
 
     if(classificacao === "fullstack"){
         return(
-            <Container>
+            <Container id="card-texto">
                 <Card>
                     <Card.Img variant="top" src={ImageCard1} width={100} height={400}/>
                     <Card.Body>
@@ -40,7 +40,7 @@ function Texto(){
     }
     else if(classificacao === "devops"){
         return(
-            <Container>
+            <Container id="card-texto">
                 <Card>
                     <Card.Img variant="top" src={ImageCard2} width={100} height={400}/>
                     <Card.Body>
@@ -56,7 +56,7 @@ function Texto(){
     }
     else{
         return(
-            <Container>
+            <Container id="card-texto">
                 <Card>
                     <Card.Img variant="top" src={ImageCard3} width={100} height={400}/>
                     <Card.Body>

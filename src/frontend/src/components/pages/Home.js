@@ -70,91 +70,94 @@ function Home(){
                 </Carousel.Item>
             </Carousel>
 
-            <Container id='div-principal-scroll'>
-                    <CardGroup id="conteudo">
-                        <Card>
-                            <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>
-                            <Card.Body>
-                                <Card.Title>Full Stack</Card.Title>
-                                <Card.Text>
-                                Em mundo globalizado onde as informações correm de maneira fácil e rápida, se especializar em uma única tecnologia ou ferramenta de trabalho, ou não conseguir se adaptar ao uso de novas tecnologias é um grande problema nos dias hoje, principalmente pra quem quer adentrar no mercado de TI.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button variant="primary" href='/fullstack'>Veja mais sobre</Button>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={ImageCard2} width="100" height="250"/>
-                            <Card.Body>
-                                <Card.Title>DevOps</Card.Title>
-                                <Card.Text>
-                                Não basta só desenvolver aplicações! É necessário desenvolver e operar as aplicações. Integrando e monitorando suas atividades para buscar um desempenho mais otimizado e simplificado.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button variant="primary" href='/devops'>Veja mais sobre</Button>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src={ImageCard3} width="100" height="250"/>
-                            <Card.Body>
-                                <Card.Title>Banco de dados</Card.Title>
-                                <Card.Text>
-                                Além de armazenar dados. Como organizar os dados? Porque organizar os dados? Que tipo de banco de dados é necessário pra determinado tipo de aplicação? Alguns dos questionamentos que se deve fazer a um profissional de TI.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button variant="primary" href='/bancodedados'>Veja mais sobre</Button>
-                            </Card.Footer>
-                        </Card>
-                    </CardGroup>
+            <Container>
+                <div class="mb-4">
+                    <hr class="solid"/>
+                </div>
+                <CardGroup id="conteudo">
+                    <Card>
+                        <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>
+                        <Card.Body>
+                            <Card.Title>Full Stack</Card.Title>
+                            <Card.Text>
+                            Em mundo globalizado onde as informações correm de maneira fácil e rápida, se especializar em uma única tecnologia ou ferramenta de trabalho, ou não conseguir se adaptar ao uso de novas tecnologias é um grande problema nos dias hoje, principalmente pra quem quer adentrar no mercado de TI.
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button variant="primary" href='/fullstack'>Veja mais sobre</Button>
+                        </Card.Footer>
+                    </Card>
+                    <Card>
+                        <Card.Img variant="top" src={ImageCard2} width="100" height="250"/>
+                        <Card.Body>
+                            <Card.Title>DevOps</Card.Title>
+                            <Card.Text>
+                            Não basta só desenvolver aplicações! É necessário desenvolver e operar as aplicações. Integrando e monitorando suas atividades para buscar um desempenho mais otimizado e simplificado.
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button variant="primary" href='/devops'>Veja mais sobre</Button>
+                        </Card.Footer>
+                    </Card>
+                    <Card>
+                        <Card.Img variant="top" src={ImageCard3} width="100" height="250"/>
+                        <Card.Body>
+                            <Card.Title>Banco de dados</Card.Title>
+                            <Card.Text>
+                            Além de armazenar dados. Como organizar os dados? Porque organizar os dados? Que tipo de banco de dados é necessário pra determinado tipo de aplicação? Alguns dos questionamentos que se deve fazer a um profissional de TI.
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Button variant="primary" href='/bancodedados'>Veja mais sobre</Button>
+                        </Card.Footer>
+                    </Card>
+                </CardGroup>
 
-                    <div class="mb-4">
-                        <hr class="solid"/>
+                <div class="mb-4">
+                    <hr class="solid"/>
+                </div>
+
+                <div id='curriculo' className='div-h1-curriculo'>
+                    <h1 id='h1-curriculo'>Minha Formação</h1>
+                </div>
+
+                <Figure>
+                    <Figure.Image
+                        width={1241}
+                        height={1755}
+                        alt="..."
+                        src={Curriculo}
+                    />
+                </Figure>
+
+                <div class="mb-4">
+                    <hr class="solid"/>
+                </div>
+
+                <div className='div-h1-contato' id='contato'>
+                    <h1 id='h1-contato'>Entre em Contato</h1>
+                </div>
+
+                <Form className='formulario-contato' onSubmit={sendEmail}>
+                    <Form.Group className="mb-3" >
+                        <Form.Label>Nome</Form.Label>
+                        <Form.Control type="text" placeholder="ex: João da Silva" value={name} onChange={(e) => setName(e.target.value)}/>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>E-mail</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" >
+                        <Form.Label>Motivo do contato</Form.Label>
+                        <Form.Control as="textarea" rows={3} placeholder="Motivo do contato" value={message} onChange={(e) => setMessage(e.target.value)}/>
+                    </Form.Group>
+
+                    <div className="d-grid gap-2">
+                        <Button variant="primary" type="submit" size="lg">
+                            Enviar
+                        </Button>
                     </div>
-
-                    <div id='curriculo' className='div-h1-curriculo'>
-                        <h1 id='h1-curriculo'>Minha Formação</h1>
-                    </div>
-
-                    <Figure>
-                        <Figure.Image
-                            width={1241}
-                            height={1755}
-                            alt="..."
-                            src={Curriculo}
-                        />
-                    </Figure>
-
-                    <div class="mb-4">
-                        <hr class="solid"/>
-                    </div>
-
-                    <div className='div-h1-contato' id='contato'>
-                        <h1 id='h1-contato'>Entre em Contato</h1>
-                    </div>
-
-                    <Form className='formulario-contato' onSubmit={sendEmail}>
-                        <Form.Group className="mb-3" >
-                            <Form.Label>Nome</Form.Label>
-                            <Form.Control type="text" placeholder="ex: João da Silva" value={name} onChange={(e) => setName(e.target.value)}/>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>E-mail</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" >
-                            <Form.Label>Motivo do contato</Form.Label>
-                            <Form.Control as="textarea" rows={3} placeholder="Motivo do contato" value={message} onChange={(e) => setMessage(e.target.value)}/>
-                        </Form.Group>
-
-                        <div className="d-grid gap-2">
-                            <Button variant="primary" type="submit" size="lg">
-                                Enviar
-                            </Button>
-                        </div>
-                    </Form>
+                </Form>
             </Container>
         </div>
     )
