@@ -39,6 +39,11 @@ function Home(){
             setName('')
             setEmail('')
             setMessage('')
+            return
+        })
+        .catch(() => {
+            alert("Erro ao tentar enviar mensagem!")
+            return
         })
     }
 
@@ -139,15 +144,15 @@ function Home(){
                 <Form className='formulario-contato' onSubmit={sendEmail}>
                     <Form.Group className="mb-3" >
                         <Form.Label>Nome</Form.Label>
-                        <Form.Control type="text" placeholder="ex: João da Silva" value={name} onChange={(e) => setName(e.target.value)}/>
+                        <Form.Control required type="text" placeholder="ex: João da Silva" value={name} onChange={(e) => setName(e.target.value)}/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>E-mail</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <Form.Control required type="email" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" >
                         <Form.Label>Motivo do contato</Form.Label>
-                        <Form.Control as="textarea" rows={3} placeholder="Motivo do contato" value={message} onChange={(e) => setMessage(e.target.value)}/>
+                        <Form.Control required as="textarea" rows={3} placeholder="Motivo do contato" value={message} onChange={(e) => setMessage(e.target.value)}/>
                     </Form.Group>
 
                     <div className="d-grid gap-2">
