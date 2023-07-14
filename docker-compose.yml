@@ -48,6 +48,7 @@ services:
       - "${DB_PORT}:5432"
   adminer:
     image: adminer
+    restart: always
     links:
       - database
     ports:
