@@ -18,8 +18,6 @@ function Home(){
     const service_id = process.env.REACT_APP_SERVICE_ID
     const template_id = process.env.REACT_APP_TEMPLATE_ID
     const publickey = process.env.REACT_APP_PUBLICKEY
-
-    console.log("imprime porra: ", publickey)
     
     function sendEmail(e){
         e.preventDefault()
