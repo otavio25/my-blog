@@ -14,7 +14,7 @@ function Header(){
                 <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light">
                     <Container>
                         <Navbar.Brand href="/">
-                            <img src={Logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
+                            <img src={Logo} width="50" height="50" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
