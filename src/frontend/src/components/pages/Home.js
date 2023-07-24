@@ -9,6 +9,7 @@ import ImageHome from '../img/home.png'
 import ImageHome2 from '../img/home2.png'
 import ImageHome3 from '../img/home3.png'
 import Curriculo from '../img/curriculo.jpg'
+import Swal from 'sweetalert2'
 
 function Home(){
     const [name, setName] = useState('')
@@ -21,11 +22,6 @@ function Home(){
     
     function sendEmail(e){
         e.preventDefault()
-
-        if(name === '' || email === '' || message === ''){
-            alert("Todos os campos precisam ser preenchidos!");
-            return
-        }
         
         const templateParams = {
             from_name: name,
@@ -35,7 +31,11 @@ function Home(){
 
         emailjs.send(service_id, template_id, templateParams, publickey)
         .then(()=>{
-            alert("Mensagem enviada com sucesso!")
+            Swal.fire(
+                'Sucesso',
+                'Mensagem enviada com sucesso',
+                'success'
+            )
             setName('')
             setEmail('')
             setMessage('')

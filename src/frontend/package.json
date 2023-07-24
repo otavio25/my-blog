@@ -12,7 +12,8 @@
     "react-icons": "^4.7.1",
     "react-native-dotenv": "^3.4.8",
     "react-router-dom": "6.3",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "sweetalert2": "^11.7.20"
   },
   "scripts": {
     "start": "react-scripts start",
