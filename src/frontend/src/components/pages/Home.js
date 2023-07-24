@@ -42,7 +42,11 @@ function Home(){
             return
         })
         .catch(() => {
-            alert("Erro ao tentar enviar mensagem!")
+            Swal.fire(
+                'Oops...',
+                'Erro! Não foi possível enviar a mensagem!',
+                'error'
+            )
             return
         })
     }
