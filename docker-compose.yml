@@ -30,7 +30,6 @@ services:
       - database
     links:
       - database
-    #command: bash -c "npx knex migrate:latest"
     volumes:
       - /backend/node_modules
       - ./src/backend:/backend
