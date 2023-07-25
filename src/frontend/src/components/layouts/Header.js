@@ -69,7 +69,7 @@ function Header(){
                     </Container>
                 </Navbar>
 
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={show} onHide={handleClose} centered size="lg">
                     <Modal.Header closeButton>
                         <Modal.Title>Bem-vindo</Modal.Title>
                     </Modal.Header>
