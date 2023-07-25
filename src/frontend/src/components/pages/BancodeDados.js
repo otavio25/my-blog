@@ -6,7 +6,7 @@ function BancodeDados(){
     const [texto, setTexto] = useState([])
 
     useEffect(()=>{
-        fetch(`http://15.228.82.232:3333/textos?classificacao=bancodedados`)
+        fetch(`http://15.229.43.159:3333/textos?classificacao=bancodedados`)
         .then(res=>res.json())
         .then(
             (res)=>{
