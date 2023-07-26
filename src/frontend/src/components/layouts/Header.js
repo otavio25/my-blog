@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { Container, Navbar, Nav, Button, Modal } from 'react-bootstrap';
+import { Container, Navbar, Nav, Button, Modal, Row, Col, Image } from 'react-bootstrap';
 import Logo from '../img/logo.png'
+import './styles.css'
 
 function Header(){
     const [show, setShow] = useState(false);
@@ -31,16 +32,25 @@ function Header(){
                     </Container>
                 </Navbar>
 
-                <Modal show={show} onHide={handleClose} centered size="lg">
+                <Modal show={show} onHide={handleClose} centered size="lg" className='customOverlay'>
                     <Modal.Header closeButton>
                         <Modal.Title>Bem-vindo</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <p>Olá!</p>
-                        <p>Meu nome é Otavio, tenho 25 anos.</p>
-                        <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
-                        <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
-                        <p>Obrigado!</p>
+                        <Container>
+                            <Row>
+                                <Col xs={12} md={8}>
+                                    <p>Olá!</p>
+                                    <p>Meu nome é Otavio, tenho 25 anos.</p>
+                                    <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
+                                    <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
+                                    <p>Obrigado!</p>
+                                </Col>
+                                <Col xs={6} md={4}>
+                                    <Image src={Logo} width={230} height={230}/>
+                                </Col>
+                            </Row>
+                        </Container>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={handleClose}>
@@ -74,11 +84,20 @@ function Header(){
                         <Modal.Title>Bem-vindo</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <p>Olá!</p>
-                        <p>Meu nome é Otavio, tenho 25 anos.</p>
-                        <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
-                        <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
-                        <p>Obrigado!</p>
+                        <Container>
+                            <Row>
+                                <Col xs={12} md={8}>
+                                    <p>Olá!</p>
+                                    <p>Meu nome é Otavio, tenho 25 anos.</p>
+                                    <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
+                                    <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
+                                    <p>Obrigado!</p>
+                                </Col>
+                                <Col xs={6} md={4}>
+                                    <Image src={Logo} width={230} height={230}/>
+                                </Col>
+                            </Row>
+                        </Container>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={handleClose}>
