@@ -13,7 +13,7 @@ function Texto(){
     const navigate = useNavigate()
 
     useEffect(()=>{
-        fetch(`http://15.228.59.91:3333/texto?titulo=${titulo}`)
+        fetch(`http://15.228.253.173:3333/texto?titulo=${titulo}`)
         .then(res=>res.json())
         .then(
             (res)=>{
