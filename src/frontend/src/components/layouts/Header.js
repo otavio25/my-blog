@@ -26,6 +26,7 @@ function Header(){
                                 <Button variant="light" href="#conteudo">Conteúdo</Button>
                                 <Button variant="light" href="#curriculo">Currículo</Button>
                                 <Button variant="light" href="#contato">Contato</Button>
+                                <Button variant="light" href="/memorando"> Memorando </Button>
                                 <Button variant="light" onClick={handleShow}> Sobre </Button>
                             </Nav>
                         </Navbar.Collapse>
