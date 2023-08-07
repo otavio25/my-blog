@@ -7,6 +7,7 @@ import DevOps from './components/pages/DevOps';
 import FullStack from './components/pages/FullStack';
 import BancodeDados from './components/pages/BancodeDados';
 import Texto from './components/pages/Texto';
+import Memorando from './components/pages/Memorando';
 
 function App(){
   return (
@@ -18,6 +19,7 @@ function App(){
         <Route path='/fullstack' element={<FullStack/>}/>
         <Route path='/bancodedados' element={<BancodeDados/>}/>
         <Route path='/texto' element={<Texto/>}/>
+        <Route path='/memorando' element={<Memorando/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
