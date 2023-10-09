@@ -13,7 +13,7 @@ function FullStack(){
                 setTexto(res)
             }
         )
-    })
+    }, [])
 
     if(texto.length > 0){
         return (

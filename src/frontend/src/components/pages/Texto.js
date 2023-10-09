@@ -20,7 +20,7 @@ function Texto(){
                 setTexto(res)
             }
         )
-    })
+    }, [])
 
     if(classificacao === "fullstack"){
         return(
