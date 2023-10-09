@@ -13,7 +13,7 @@ function BancodeDados(){
                 setTexto(res)
             }
         )
-    })
+    }, [])
 
     if(texto.length > 0){
         return (
