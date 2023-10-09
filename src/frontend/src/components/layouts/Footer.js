@@ -21,7 +21,7 @@ function Footer(){
                             <a id='facebook' href='https://www.facebook.com/profile.php?id=100022442240678' target="_blank" rel="noopener noreferrer"><BsFacebook size={30}/></a>
                         </li>
                         <li class="nav-item">
-                            <a id='whastapp' href='https://wa.me/5561999055506' target="_blank" rel="noopener noreferrer"><BsWhatsapp size={30}/></a>
+                            <a id='whastapp' href='https://wa.me/5561996338703' target="_blank" rel="noopener noreferrer"><BsWhatsapp size={30}/></a>
                         </li>
                     </ul>
                     <p class="text-center text-muted">© 2023 - Todos os Direitos Reservados</p>
