@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Container, Navbar, Nav, Button, Modal, Row, Col, Image } from 'react-bootstrap';
 import Logo from '../img/logo.png'
+import Me from '../img/me.jpg'
 import './styles.css'
 
 function Header(){
@@ -47,7 +48,7 @@ function Header(){
                                 <p>Obrigado!</p>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Image src={Logo} width={230} height={230}/>
+                                <Image src={Me} width={215} height={280} className='rounded-circle'/>
                             </Col>
                         </Row>
                     </Container>
