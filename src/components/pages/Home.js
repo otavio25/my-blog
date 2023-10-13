@@ -8,7 +8,7 @@ import ImageHome3 from '../img/home3.png'
 import ImageCard1 from '../img/AWS-serverless.png'
 import ImageCard2 from '../img/faas.jpg'
 import ImageCard3 from '../img/programacao.jpg'
-import Curriculo from '../img/curriculo.jpg'
+import Curriculo from '../img/curriculo.png'
 import Swal from 'sweetalert2'
 import Memorando_html from 'html-loader!./Memorando_6398728.html'
 
@@ -53,7 +53,7 @@ function Home(){
     }
 
     return(
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div id='div-principal-home' data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
             <Carousel id="home">
                 <Carousel.Item>
                     <img
@@ -112,7 +112,7 @@ function Home(){
                         <Card.Body>
                             <Card.Title>QSA Info</Card.Title>
                             <Card.Text>
-                            Projeto voltado ao dados do QSA, retorna uma listagem de empresas e seus sócios e mostra um gráfico dessa relacionamento.
+                            Projeto voltado aos dados do QSA, retorna uma listagem de empresas e seus sócios e mostra um gráfico desse relacionamento.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>

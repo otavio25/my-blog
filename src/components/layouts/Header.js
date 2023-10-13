@@ -12,7 +12,7 @@ function Header(){
 
     return (
         <header>
-            <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light">
+            <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={Logo} width="50" height="50" className="d-inline-block align-top" alt="React Bootstrap logo"/>
