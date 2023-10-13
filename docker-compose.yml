@@ -8,50 +8,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     ports:
-      - ${FRONTEND_PORT}:3000
+      - 80:80
     volumes:
       - /frontend/node_modules
       - ./src/frontend:/frontend
-  backend:
-    container_name: my-blog-backend
-    build:
-      context: ./src/backend
-      dockerfile: Dockerfile
-    restart: always
-    ports:
-      - ${BACKEND_PORT}:3333
-    environment:
-      DB_HOST: ${DB_HOST}
-      DB_PORT: ${DB_PORT}
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
-      DB_NAME: ${DB_NAME}
-    depends_on:
-      - database
-    links:
-      - database
-    volumes:
-      - /backend/node_modules
-      - ./src/backend:/backend
-  database:
-    container_name: postgres_container
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
-    volumes:
-      - ./data/database:/var/lib/postgresql/data
-    ports:
-      - "${DB_PORT}:5432"
-  adminer:
-    image: adminer
-    restart: always
-    links:
-      - database
-    ports:
-      - 8080:8080
-volumes:
-  postgres:
-    driver: local

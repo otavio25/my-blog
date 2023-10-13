@@ -2,14 +2,15 @@ import React, {useState} from 'react';
 import './styles.css'
 import { Card, CardGroup, Container, Button, Form, Carousel, Figure } from 'react-bootstrap';
 import emailjs from '@emailjs/browser'
-import ImageCard1 from '../img/programacao.jpg'
-import ImageCard2 from '../img/DevOps.png'
-import ImageCard3 from '../img/banco-de-dados.jpg'
 import ImageHome from '../img/home.png'
 import ImageHome2 from '../img/home2.png'
 import ImageHome3 from '../img/home3.png'
+import ImageCard1 from '../img/AWS-serverless.png'
+import ImageCard2 from '../img/faas.jpeg'
+import ImageCard3 from '../img/programacao.jpg'
 import Curriculo from '../img/curriculo.jpg'
 import Swal from 'sweetalert2'
+import Memorando_html from 'html-loader!./Memorando_6398728.html'
 
 function Home(){
     const [name, setName] = useState('')
@@ -85,37 +86,37 @@ function Home(){
                     <Card>
                         <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>Full Stack</Card.Title>
+                            <Card.Title>FaaS Node.js</Card.Title>
                             <Card.Text>
-                            Em mundo globalizado onde as informações correm de maneira fácil e rápida, se especializar em uma única tecnologia ou ferramenta de trabalho, ou não conseguir se adaptar ao uso de novas tecnologias é um grande problema nos dias hoje, principalmente pra quem quer adentrar no mercado de TI.
+                            Projeto que trata repetições de artigos utilizando uma bordagem multi cloud e serverless.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='/fullstack'>Veja mais sobre</Button>
+                            <Button variant="primary" href='#'>Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={ImageCard2} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>DevOps</Card.Title>
+                            <Card.Title>FaaS Métricas</Card.Title>
                             <Card.Text>
-                            Não basta só desenvolver aplicações! É necessário desenvolver e operar as aplicações. Integrando e monitorando suas atividades para buscar um desempenho mais otimizado e simplificado.
+                            Projeto que calcula métricas de artigos, retornando as palavras mais frequentes de cada ano, função que utiliza FaaS como abordagem principal.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='/devops'>Veja mais sobre</Button>
+                            <Button variant="primary" href='#'>Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={ImageCard3} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>Banco de dados</Card.Title>
+                            <Card.Title>QSA Info</Card.Title>
                             <Card.Text>
-                            Além de armazenar dados. Como organizar os dados? Porque organizar os dados? Que tipo de banco de dados é necessário pra determinado tipo de aplicação? Alguns dos questionamentos que se deve fazer a um profissional de TI.
+                            Projeto voltado ao dados do QSA, retorna uma listagem de empresas e seus sócios e mostra um gráfico dessa relacionamento.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='/bancodedados'>Veja mais sobre</Button>
+                            <Button variant="primary" href='#'>Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
@@ -136,6 +137,16 @@ function Home(){
                         src={Curriculo}
                     />
                 </Figure>
+
+                <div class="mb-4">
+                    <hr class="solid"/>
+                </div>
+
+                <div id='memorando' className='div-h1-memorando'>
+                    <h1 id='h1-memorando'>Memorando</h1>
+                </div>
+
+                <div dangerouslySetInnerHTML={ {__html: Memorando_html} } className='div-memorando'/>
 
                 <div class="mb-4">
                     <hr class="solid"/>
