@@ -116,7 +116,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='http://52.67.92.222:3000/' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='http://18.229.255.146:3000/' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
