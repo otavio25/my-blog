@@ -104,7 +104,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='#' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/faas-metricas' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
@@ -116,7 +116,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='http://18.229.255.146:3000/' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='http://54.207.109.122:3000/' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
