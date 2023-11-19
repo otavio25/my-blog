@@ -116,7 +116,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='http://54.207.109.122:3000/' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/qsa-info' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
