@@ -5,8 +5,8 @@ import emailjs from '@emailjs/browser'
 import ImageHome from '../img/home.png'
 import ImageHome2 from '../img/home2.png'
 import ImageHome3 from '../img/home3.png'
-import ImageCard1 from '../img/AWS-serverless.png'
-import ImageCard2 from '../img/faas.jpg'
+import ImageCard1 from '../img/seguranca.jpeg'
+import ImageCard2 from '../img/cve.png'
 import ImageCard3 from '../img/programacao.jpg'
 import Curriculo from '../img/curriculo.png'
 import Swal from 'sweetalert2'
@@ -86,25 +86,25 @@ function Home(){
                     <Card>
                         <Card.Img variant="top" src={ImageCard1} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>FaaS Node.js</Card.Title>
+                            <Card.Title>Scan Vulnabilidade WordPress</Card.Title>
                             <Card.Text>
-                            Projeto que trata repetições de artigos utilizando uma bordagem multi cloud e serverless.
+                            Projeto que verifica a existência de vulnerabilidades em plugins, temas e versões de sites WordPress.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='https://github.com/otavio25/faas-nodejs' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/scan-vulnerabilidade-wp' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={ImageCard2} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>FaaS Métricas</Card.Title>
+                            <Card.Title>Data Load CVE</Card.Title>
                             <Card.Text>
-                            Projeto que calcula métricas de artigos, retornando as palavras mais frequentes de cada ano, função que utiliza FaaS como abordagem principal.
+                            Projeto que realiza carga de dados do banco de dados CVE (Common Vulnerabilities and Exposures) no banco de dados MongoDB local.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='https://github.com/otavio25/faas-metricas' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/DataLoadCVE' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
