@@ -5,7 +5,7 @@ import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import pdf from '../img/TCC_versao_final.pdf'
+import pdf from './TCC_versao_final.pdf'
 
 function TCC(){
     const newPlugin = defaultLayoutPlugin()
