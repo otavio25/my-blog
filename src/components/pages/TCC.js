@@ -12,7 +12,7 @@ function TCC(){
     return (
         <Container className='pdf'>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-                <Viewer fileUrl={pdf} plugins={[newPlugin]} onError={(e) => console.error('Erro ao carregar o PDF:', e)}/>
+                <Viewer fileUrl={pdf} plugins={[newPlugin]}/>
             </Worker>
         </Container>
     )
