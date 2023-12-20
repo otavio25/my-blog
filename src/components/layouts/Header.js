@@ -45,7 +45,7 @@ function Header(){
                                     <p>Olá!</p>
                                     <p>Meu nome é Otavio, tenho 25 anos.</p>
                                     <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
-                                    <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
+                                    <p>Sou desenvolvedor Full Stack e espero que você goste do conteúdo aqui apresentado. Se tiver alguma ideia de projeto, não hesite em entrar em contato comigo. Espero que você aprecie o que está sendo apresentado!</p>
                                     <p>Obrigado!</p>
                                 </Col>
                                 <Col xs={6} md={4}>
@@ -94,7 +94,7 @@ function Header(){
                                     <p>Olá!</p>
                                     <p>Meu nome é Otavio, tenho 25 anos.</p>
                                     <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
-                                    <p>Sou desenvolvedor FullStack em Nodejs e espero que você goste do conteúdo aqui apresentado, e caso tenha uma ideia de projeto ou sugestões para melhorias, ambas são bem-vindas.</p>
+                                    <p>Sou desenvolvedor Full Stack e espero que você goste do conteúdo aqui apresentado. Se tiver alguma ideia de projeto, não hesite em entrar em contato comigo. Espero que você aprecie o que está sendo apresentado!</p>
                                     <p>Obrigado!</p>
                                 </Col>
                                 <Col xs={6} md={4}>
