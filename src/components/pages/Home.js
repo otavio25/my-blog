@@ -6,7 +6,7 @@ import ImageHome from '../img/home.png'
 import ImageHome2 from '../img/home2.png'
 import ImageHome3 from '../img/home3.png'
 import ImageCard1 from '../img/seguranca.jpeg'
-import ImageCard2 from '../img/cve.png'
+import ImageCard2 from '../img/faas.jpg'
 import ImageCard3 from '../img/programacao.jpg'
 import Curriculo from '../img/curriculo.png'
 import Swal from 'sweetalert2'
@@ -92,19 +92,19 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='https://github.com/otavio25/scan-vulnerabilidade-wp' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/scan-vulnerabilidade-wp' target="_blank" rel="noopener noreferrer">Veja</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={ImageCard2} width="100" height="250"/>
                         <Card.Body>
-                            <Card.Title>Data Load CVE</Card.Title>
+                            <Card.Title>Trabalho de Conclusão de Curso</Card.Title>
                             <Card.Text>
-                            Projeto que realiza carga de dados do banco de dados CVE (Common Vulnerabilities and Exposures) no banco de dados MongoDB local.
+                            Monografia apresentada como requisito parcial para conclusão do Bacharelado em Ciência da Computação na Universidade de Brasília.
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='https://github.com/otavio25/DataLoadCVE' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='/tcc'>Veja</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
@@ -116,7 +116,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='https://github.com/otavio25/qsa-info' target="_blank" rel="noopener noreferrer">Veja mais sobre</Button>
+                            <Button variant="primary" href='https://github.com/otavio25/qsa-info' target="_blank" rel="noopener noreferrer">Veja</Button>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
