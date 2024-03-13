@@ -25,6 +25,7 @@ function Header(){
                             </Nav>
                             <Nav>
                                 <Button variant="light" href="#conteudo">Projetos</Button>
+                                <Button variant="light" href="/artes">Artes</Button>
                                 <Button variant="light" href="#curriculo">Currículo</Button>
                                 <Button variant="light" href="#contato">Contato</Button>
                                 <Button variant="light" href="#memorando"> Memorando </Button>

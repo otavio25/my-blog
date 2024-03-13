@@ -23,7 +23,7 @@ function Footer(){
                         <a id='whastapp' href='https://wa.me/5561996338703' target="_blank" rel="noopener noreferrer"><BsWhatsapp size={30}/></a>
                     </li>
                 </ul>
-                <p class="text-center text-muted">© 2023 - Todos os Direitos Reservados</p>
+                <p class="text-center text-muted">© 2024 - Todos os Direitos Reservados</p>
             </Container>
         </footer>
     )
