@@ -10,7 +10,6 @@ import ImageCard2 from '../img/faas.jpg'
 import ImageCard3 from '../img/programacao.jpg'
 import Curriculo from '../img/curriculo.png'
 import Swal from 'sweetalert2'
-import Memorando_html from 'html-loader!./Memorando_6398728.html'
 
 function Home(){
     const [name, setName] = useState('')
@@ -137,16 +136,6 @@ function Home(){
                         src={Curriculo}
                     />
                 </Figure>
-
-                <div class="mb-4">
-                    <hr class="solid"/>
-                </div>
-
-                <div id='memorando' className='div-h1-memorando'>
-                    <h1 id='h1-memorando'>Memorando</h1>
-                </div>
-
-                <div dangerouslySetInnerHTML={ {__html: Memorando_html} } className='div-memorando'/>
 
                 <div class="mb-4">
                     <hr class="solid"/>

@@ -4,7 +4,7 @@ import Home from './components/pages/Home'
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
 import TCC from './components/pages/TCC'
-import Artes from './components/pages/Artes'
+import Memorando from './components/pages/Memorando';
 
 function App(){
   return (
@@ -13,7 +13,7 @@ function App(){
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/tcc' element={<TCC/>}/>
-        <Route path='/artes' element={<Artes/>}/>
+        <Route path='/memorando' element={<Memorando/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

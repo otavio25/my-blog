@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:18-alpine3.19
 LABEL application="my-blog"
 WORKDIR /frontend
 COPY package*.json ./
