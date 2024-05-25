@@ -8,5 +8,11 @@
     <li> docker compose </li>
 </ul>
 
+<h2>Variáveis de ambiente</h2>
+<p> Necessário acessar a conta pessoal no site EmailJS para recuperar os valores listados abaixo, que precisam ser definidos dentros de um arquivo <strong>.env</strong> na raiz do projeto.</p>
+<blockquote>REACT_APP_SERVICE_ID=valor1</blockquote>
+<blockquote>REACT_APP_TEMPLATE_ID=valor2</blockquote>
+<blockquote>REACT_APP_PUBLICKEY=valor3</blockquote>
+
 <h2> Comando para executar a aplicação: </h2>
 <blockquote> docker compose up </blockquote>
