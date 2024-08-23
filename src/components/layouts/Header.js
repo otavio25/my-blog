@@ -27,7 +27,7 @@ function Header(){
                                 <Button variant="light" href="#conteudo">Projetos</Button>
                                 <Button variant="light" href="#curriculo">Currículo</Button>
                                 <Button variant="light" href="#contato">Contato</Button>
-                                <Button variant="light" href="/my-blog/memorando"> Memorando </Button>
+                                <Button variant="light" href="https://drive.google.com/file/d/1EYnkLzOOy6HZFhgIEDy3UpbDPcFFtP44/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Memorando </Button>
                                 <Button variant="light" onClick={handleShow}> Sobre </Button>
                             </Nav>
                         </Navbar.Collapse>

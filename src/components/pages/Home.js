@@ -103,7 +103,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='/my-blog/tcc'>Veja</Button>
+                            <Button variant="primary" href='https://drive.google.com/file/d/1jneZc-Vy_SOZX8TlUlgYqXiaIyd7eqnn/view?usp=sharing' target="_blank" rel="noopener noreferrer">Veja</Button>
                         </Card.Footer>
                     </Card>
                     <Card>
