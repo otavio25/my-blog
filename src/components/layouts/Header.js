@@ -15,7 +15,7 @@ function Header(){
             <header>
                 <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
                     <Container>
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand href="/my-blog/">
                             <img src={Logo} width="50" height="50" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -68,7 +68,7 @@ function Header(){
             <header>
                 <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
                     <Container>
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand href="/my-blog/">
                             <img src={Logo} width="50" height="50" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
