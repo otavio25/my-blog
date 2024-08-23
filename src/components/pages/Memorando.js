@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css'
 import { Container } from 'react-bootstrap';
-//import Memorando_html from 'html-loader!./Memorando_6398728.html'
-import Memorando_html from '/static/media/Memorando_6398728.html'
+import Memorando_html from 'html-loader!./Memorando_6398728.html'
+//import Memorando_html from '/static/media/Memorando_6398728.html'
 
 function Memorando(){
     return (
