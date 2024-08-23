@@ -8,13 +8,13 @@ module.exports = {
                 test: /\.html$/i,
                 loader: "html-loader",
             }
-        ],
-        plugins: [
-            new CopyWebpackPlugin({
-                patterns: [
-                    { from: path.resolve(__dirname, 'src/components/pages/Memorando_6398728.html'), to: 'memorando/' },
-                ],
-            }),
-        ],
+        ]
     },
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, 'src/components/pages/Memorando_6398728.html'), to: 'static/media' },
+            ],
+        }),
+    ]
 };
