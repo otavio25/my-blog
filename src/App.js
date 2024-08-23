@@ -8,7 +8,7 @@ import Memorando from './components/pages/Memorando';
 
 function App(){
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my-blog">
       <Header />
       <Routes>
         <Route path='/' element={<Home/>}/>
