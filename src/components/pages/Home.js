@@ -103,7 +103,7 @@ function Home(){
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" href='/tcc'>Veja</Button>
+                            <Button variant="primary" href='/my-blog/tcc'>Veja</Button>
                         </Card.Footer>
                     </Card>
                     <Card>

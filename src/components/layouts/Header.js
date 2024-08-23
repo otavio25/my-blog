@@ -10,7 +10,7 @@ function Header(){
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    if(window.location.pathname == '/'){
+    if(window.location.pathname === '/my-blog/' || window.location.pathname === '/my-blog'){
         return (
             <header>
                 <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
@@ -27,7 +27,7 @@ function Header(){
                                 <Button variant="light" href="#conteudo">Projetos</Button>
                                 <Button variant="light" href="#curriculo">Currículo</Button>
                                 <Button variant="light" href="#contato">Contato</Button>
-                                <Button variant="light" href="/memorando"> Memorando </Button>
+                                <Button variant="light" href="/my-blog/memorando"> Memorando </Button>
                                 <Button variant="light" onClick={handleShow}> Sobre </Button>
                             </Nav>
                         </Navbar.Collapse>
@@ -74,7 +74,7 @@ function Header(){
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Button variant="light" href="/">Home</Button>
+                                <Button variant="light" href="/my-blog/">Home</Button>
                             </Nav>
                             <Nav>
                                 <Button variant="light" onClick={handleShow}> Sobre </Button>
