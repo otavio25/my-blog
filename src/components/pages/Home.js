@@ -17,6 +17,7 @@ function Home(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [loading, setLoading] = useState(false)
 
     const service_id = process.env.REACT_APP_SERVICE_ID
     const template_id = process.env.REACT_APP_TEMPLATE_ID
@@ -24,7 +25,8 @@ function Home(){
     
     function sendEmail(e){
         e.preventDefault()
-        
+        setLoading(true)
+
         const templateParams = {
             from_name: name,
             message: message,
@@ -50,6 +52,9 @@ function Home(){
                 'error'
             )
             return
+        })
+        .finally(() => {
+            setLoading(false)
         })
     }
 
@@ -164,8 +169,13 @@ function Home(){
                     </Form.Group>
 
                     <div className="d-grid gap-2">
-                        <Button variant="primary" type="submit" size="lg">
-                            Enviar
+                        <Button 
+                            variant="primary" 
+                            type="submit" 
+                            size="lg" 
+                            disabled={loading}
+                        >
+                            {loading ? 'Enviando...' : 'Enviar'}
                         </Button>
                     </div>
                 </Form>
