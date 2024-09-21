@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/my-blog/static/css/main.d8b8262e.css",
-    "main.js": "/my-blog/static/js/main.c9c4168a.js",
+    "main.css": "/my-blog/static/css/main.5efd21ad.css",
+    "main.js": "/my-blog/static/js/main.41f90384.js",
     "static/media/me.jpg": "/my-blog/static/media/me.5a0d6b4c0afeb5755f73.jpg",
     "static/media/home3.png": "/my-blog/static/media/home3.5fcbc99c135ec5f647d2.png",
     "static/media/home2.png": "/my-blog/static/media/home2.647938fcb4d48ae002ae.png",
     "static/media/curriculo.png": "/my-blog/static/media/curriculo.7fecd7cf6542b6f85e36.png",
     "static/media/home.png": "/my-blog/static/media/home.e21ec9c3fe950cd0e605.png",
+    "static/media/faas.jpg": "/my-blog/static/media/faas.ee8a19b9dcf68de2032c.jpg",
     "static/media/programacao.jpg": "/my-blog/static/media/programacao.ebb8a34f9412b6661b0f.jpg",
-    "static/media/faas.jpg": "/my-blog/static/media/faas.caf6dd5b79789390c76a.jpg",
     "static/media/logo.png": "/my-blog/static/media/logo.71576debafe6058ca4f0.png",
+    "static/media/scan_vuknerabilidade_wp.png": "/my-blog/static/media/scan_vuknerabilidade_wp.cbc73043919d3348704b.png",
+    "static/media/sistema_gerenciamento_equipamento.png": "/my-blog/static/media/sistema_gerenciamento_equipamento.5c54d6e723cff5966278.png",
     "static/media/logo_sistema_aeroportos.png": "/my-blog/static/media/logo_sistema_aeroportos.73d716ccc552fd656edd.png",
     "index.html": "/my-blog/index.html",
-    "main.d8b8262e.css.map": "/my-blog/static/css/main.d8b8262e.css.map",
-    "main.c9c4168a.js.map": "/my-blog/static/js/main.c9c4168a.js.map"
+    "main.5efd21ad.css.map": "/my-blog/static/css/main.5efd21ad.css.map",
+    "main.41f90384.js.map": "/my-blog/static/js/main.41f90384.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b8262e.css",
-    "static/js/main.c9c4168a.js"
+    "static/css/main.5efd21ad.css",
+    "static/js/main.41f90384.js"
   ]
 }
