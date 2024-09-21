@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-blog/static/css/main.5efd21ad.css",
-    "main.js": "/my-blog/static/js/main.3b1a8e03.js",
+    "main.js": "/my-blog/static/js/main.359d8f70.js",
     "static/media/me.jpg": "/my-blog/static/media/me.5a0d6b4c0afeb5755f73.jpg",
     "static/media/home3.png": "/my-blog/static/media/home3.5fcbc99c135ec5f647d2.png",
     "static/media/home2.png": "/my-blog/static/media/home2.647938fcb4d48ae002ae.png",
@@ -15,10 +15,10 @@
     "static/media/logo_sistema_aeroportos.png": "/my-blog/static/media/logo_sistema_aeroportos.73d716ccc552fd656edd.png",
     "index.html": "/my-blog/index.html",
     "main.5efd21ad.css.map": "/my-blog/static/css/main.5efd21ad.css.map",
-    "main.3b1a8e03.js.map": "/my-blog/static/js/main.3b1a8e03.js.map"
+    "main.359d8f70.js.map": "/my-blog/static/js/main.359d8f70.js.map"
   },
   "entrypoints": [
     "static/css/main.5efd21ad.css",
-    "static/js/main.3b1a8e03.js"
+    "static/js/main.359d8f70.js"
   ]
 }
