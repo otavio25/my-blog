@@ -43,7 +43,7 @@ function Header(){
                             <Row>
                                 <Col xs={12} md={8}>
                                     <p>Olá!</p>
-                                    <p>Meu nome é Otavio, tenho 25 anos.</p>
+                                    <p>Meu nome é Otavio, tenho 26 anos.</p>
                                     <p>Venho por meio deste site divulgar um pouco do meu trabalho e dos meus conhecimentos em algumas áreas de TI.</p>
                                     <p>Sou desenvolvedor Full Stack e espero que você goste do conteúdo aqui apresentado. Se tiver alguma ideia de projeto, não hesite em entrar em contato comigo. Espero que você aprecie o que está sendo apresentado!</p>
                                     <p>Obrigado!</p>
