@@ -10,7 +10,7 @@ function Header(){
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    if(window.location.pathname === '/my-blog/' || window.location.pathname === '/my-blog'){
+    if(window.location.pathname === '/my-blog/'){
         return (
             <header>
                 <Navbar collapseOnSelect id="navbar-example2" expand="lg" bg="light" data-bs-theme="light" fixed="top">
@@ -26,6 +26,7 @@ function Header(){
                             <Nav>
                                 <Button variant="light" href="#conteudo">Projetos</Button>
                                 <Button variant="light" href="#curriculo">Currículo</Button>
+                                <Button variant="light" href="#diploma">Formação Acadêmica</Button>
                                 <Button variant="light" href="#contato">Contato</Button>
                                 <Button variant="light" href="https://drive.google.com/file/d/1EYnkLzOOy6HZFhgIEDy3UpbDPcFFtP44/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Memorando </Button>
                                 <Button variant="light" onClick={handleShow}> Sobre </Button>

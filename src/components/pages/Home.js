@@ -11,6 +11,7 @@ import ImageCard3 from '../img/programacao.jpg'
 import ImageCard4 from '../img/sistema_gerenciamento_equipamento.png'
 import ImageCard5 from '../img/scan_vuknerabilidade_wp.png'
 import Curriculo from '../img/curriculo.png'
+import Diploma from '../img/diploma.png'
 import Swal from 'sweetalert2'
 
 function Home(){
@@ -136,7 +137,7 @@ function Home(){
                 <hr class="featurette-divider"/>
 
                 <div id='curriculo' className='div-h1-curriculo'>
-                    <h1 id='h1-curriculo'>Minha Formação</h1>
+                    <h1 id='h1-curriculo'>Currículo</h1>
                 </div>
 
                 <Figure>
@@ -145,6 +146,21 @@ function Home(){
                         height={1755}
                         alt="..."
                         src={Curriculo}
+                    />
+                </Figure>
+
+                <hr class="featurette-divider"/>
+
+                <div id='diploma' className='div-h1-diploma'>
+                    <h1 id='h1-diploma'>Diploma Acadêmico</h1>
+                </div>
+
+                <Figure>
+                    <Figure.Image
+                        width={1241}
+                        height={1755}
+                        alt="..."
+                        src={Diploma}
                     />
                 </Figure>
 
