@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-blog/static/css/main.4eb2294d.css",
-    "main.js": "/my-blog/static/js/main.8ec069f2.js",
+    "main.css": "/my-blog/static/css/main.c10fcfd2.css",
+    "main.js": "/my-blog/static/js/main.a7b1841d.js",
     "static/media/me.jpg": "/my-blog/static/media/me.5a0d6b4c0afeb5755f73.jpg",
     "static/media/diploma.png": "/my-blog/static/media/diploma.a02e1bbe4ae05acb6ea0.png",
     "static/media/home3.png": "/my-blog/static/media/home3.5fcbc99c135ec5f647d2.png",
     "static/media/home2.png": "/my-blog/static/media/home2.647938fcb4d48ae002ae.png",
-    "static/media/curriculo.png": "/my-blog/static/media/curriculo.efacfa32010677b02b33.png",
     "static/media/home.png": "/my-blog/static/media/home.e21ec9c3fe950cd0e605.png",
+    "static/media/curriculo.png": "/my-blog/static/media/curriculo.50ade3e15402308bf171.png",
     "static/media/faas.jpg": "/my-blog/static/media/faas.ee8a19b9dcf68de2032c.jpg",
     "static/media/programacao.jpg": "/my-blog/static/media/programacao.ebb8a34f9412b6661b0f.jpg",
     "static/media/logo.png": "/my-blog/static/media/logo.71576debafe6058ca4f0.png",
@@ -15,11 +15,11 @@
     "static/media/sistema_gerenciamento_equipamento.png": "/my-blog/static/media/sistema_gerenciamento_equipamento.5c54d6e723cff5966278.png",
     "static/media/logo_sistema_aeroportos.png": "/my-blog/static/media/logo_sistema_aeroportos.73d716ccc552fd656edd.png",
     "index.html": "/my-blog/index.html",
-    "main.4eb2294d.css.map": "/my-blog/static/css/main.4eb2294d.css.map",
-    "main.8ec069f2.js.map": "/my-blog/static/js/main.8ec069f2.js.map"
+    "main.c10fcfd2.css.map": "/my-blog/static/css/main.c10fcfd2.css.map",
+    "main.a7b1841d.js.map": "/my-blog/static/js/main.a7b1841d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eb2294d.css",
-    "static/js/main.8ec069f2.js"
+    "static/css/main.c10fcfd2.css",
+    "static/js/main.a7b1841d.js"
   ]
 }
